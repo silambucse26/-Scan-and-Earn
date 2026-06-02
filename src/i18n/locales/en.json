@@ -1,0 +1,24 @@
+{
+  "dashboard": {
+    "badge": "Working Dashboard",
+    "welcome": "Welcome back, {{name}}.",
+    "subtitle": "Manage uploads, track approvals, and redeem rewards from one place.",
+    "startUpload": "Start Upload",
+    "viewProfile": "View Profile",
+    "redeemRewards": "Redeem Rewards",
+    "uploads": "Uploads",
+    "total": "Total",
+    "verified": "Verified",
+    "approved": "Approved",
+    "pending": "Pending",
+    "review": "Review",
+    "wallet": "Wallet",
+    "points": "{{count}} pts",
+    "approxRs": "₹{{amount}}"
+  },
+  "language": {
+    "english": "English",
+    "tamil": "தமிழ்",
+    "hindi": "हिंदी"
+  }
+}

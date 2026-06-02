@@ -1,0 +1,24 @@
+{
+  "dashboard": {
+    "badge": "वर्किंग डैशबोर्ड",
+    "welcome": "वापस स्वागत है, {{name}}.",
+    "subtitle": "अपलोड, अप्रूवल स्टेटस और रिवॉर्ड्स को एक ही जगह मैनेज करें.",
+    "startUpload": "अपलोड शुरू करें",
+    "viewProfile": "प्रोफाइल देखें",
+    "redeemRewards": "रिवॉर्ड रिडीम करें",
+    "uploads": "अपलोड्स",
+    "total": "कुल",
+    "verified": "वेरिफाइड",
+    "approved": "अप्रूव्ड",
+    "pending": "पेंडिंग",
+    "review": "रिव्यू",
+    "wallet": "वॉलेट",
+    "points": "{{count}} पॉइंट्स",
+    "approxRs": "₹{{amount}}"
+  },
+  "language": {
+    "english": "English",
+    "tamil": "தமிழ்",
+    "hindi": "हिंदी"
+  }
+}
