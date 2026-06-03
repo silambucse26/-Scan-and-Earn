@@ -23,17 +23,20 @@ function DiseaseDetail() {
   const [items, setItems] = useState<ImageItem[]>([]);
   const [points, setPoints] = useState(0);
 
-  const submit = () => {
-    const valid = items.filter((i) => i.url && hasMinWords(i.label, 5));
+  const submit = async () => {
+    const valid = items.filter((i) => i.file && hasMinWords(i.label, 5));
     if (valid.length < 4) {
       return toast.error("Please upload at least 4 images with descriptions of at least 5 words.");
     }
-    addSubmission({
+
+    const result = await addSubmission({
       category: "disease-vet",
       diseaseName: d.name,
-      items: valid.map((i) => ({ imageUrl: i.url!, label: i.label })),
-      points,
+      items: valid.map((i) => ({ file: i.file!, label: i.label })),
     });
+
+    if (!result.ok) return toast.error(result.error || "Could not upload disease images");
+
     router.navigate({ to: "/success", search: { points } });
   };
 

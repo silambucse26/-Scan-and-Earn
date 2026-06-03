@@ -186,6 +186,17 @@ function SubmissionCard({ s }: { s: import("@/lib/auth-context").Submission }) {
           </div>
         ))}
       </div>
+      <div className="mt-3 space-y-2">
+        {s.items.slice(0, 3).map((it, idx) => (
+          <div key={`${it.imageUrl}-${idx}`} className="rounded-xl bg-muted/50 px-3 py-2">
+            <div className="text-[11px] font-medium text-muted-foreground">Image {idx + 1}</div>
+            <p className="mt-0.5 line-clamp-2 text-sm">{it.label}</p>
+          </div>
+        ))}
+        {s.items.length > 3 && (
+          <div className="text-xs text-muted-foreground">+{s.items.length - 3} more descriptions</div>
+        )}
+      </div>
     </div>
   );
 }
